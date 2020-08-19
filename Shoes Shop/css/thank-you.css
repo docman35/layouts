@@ -1,0 +1,36 @@
+main{
+    text-align: center;
+    padding: 300px 0;
+}
+
+main h2{
+    font-size: 92px;
+    color: #303030;
+    margin: 0;
+}
+
+main p{
+    font-size: 30px;
+    color: #999999;
+    margin-bottom: 0;
+}
+
+main p .smile{
+    display: inline-block;
+    transform: rotate(15deg);
+}
+
+@media (max-width: 768px){
+    main{
+        border-bottom: 1px solid #e5e5e5;
+        padding: 75px 0;
+    }
+
+    main h2{
+        font-size: 69px;
+    }
+
+    #footerContainer{
+        padding-top: 50px;
+    }
+}

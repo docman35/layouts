@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Кураж Тур</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <article>
+            <section class="headerTop">
+                <div class="headerLogo">
+                    <a href="#">
+                        <img src="../img/header_logo.png" alt="logo">
+                    </a>
+                    <h2>КУРАЖ ТУР</h2>
+                    <p>МИР ВОКРУГ ТЕБЯ</p>
+                </div>
+                <div class="blockContactAndMenu">
+                    <div class="headerContacts">
+                        <p>г. Харьков, ул. Мироносицкая 10а</p>
+                        <p>+38 (099) 990-81-00  (viber, telegram)</p>
+                        <div class="headerSocial">
+                            <a href="#"><img class="icon" src="../img/icon_facebook.png" alt="icon_facebook></a>
+                            <a href="#"><img class="icon" src="../img/icon_instagram.png" alt="icon_instagram"></a>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul class="mainMenu" id="mainMenu">
+                            <li><a href="#">Главная</a></li>
+                            <li class="dropDown choiseOfTours deleg">Туры
+                                <ul id="dropDownMenuChoiseOfTours" class="childDeleg">
+                                    <li>Горящие туры</li>
+                                    <li>Поиск тура</li>
+                                    <li>Туры по Украине</li>
+                                    <li>Экскурсионные туры</li>
+                                    <li>Weekend туры</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Страны</a></li>
+                            <li class="dropDown services deleg">Услуги
+                                <ul id="dropDownMenuServices" class="childDeleg">
+                                    <li>Авиабилеты</li>
+                                    <li>Визовая поддержка</li>
+                                    <li>Индивидуальный трансфер</li>
+                                    <li>Подарочные сертификаты</li>
+                                    <li>Бронирование отелей и апартаментов</li>
+                                    <li>Как забронировать и оплатить тур</li>
+                                </ul>
+                            </li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="blockSandwichMenu">
+                    <ul class="sandwichMenu">
+                        <li><a href="#">Главная</a></li>
+                        <li class="blockSandwichDropMenuTours" onclick="checkValueToursDropDownMenu()">
+                            <p>Туры</p>
+                            <ul id="sandwichDropMenuTours">
+                                <li><a href="#">Горящие туры</a></li>
+                                <li><a href="#">Поиск тура</a></li>
+                                <li><a href="#">Туры по Украине</a></li>
+                                <li><a href="#">Экскурсионные туры</a></li>
+                                <li><a href="#">Weekend туры</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Страны</a></li>
+                        <li class="blockSandwichDropMenuServices" onclick="checkValueServicesDropDownMenu()">
+                            <p>Услуги</p>
+                            <ul id="sandwichDropMenuServices">
+                                <li><a href="#">Авиабилеты</a></li>
+                                <li><a href="#">Визовая поддержка</a></li>
+                                <li><a href="#">Индивидуальный трансфер</a></li>
+                                <li><a href="#">Подарочные сертификаты</a></li>
+                                <li><a href="#">Бронирование отелей и апартаментов</a></li>
+                                <li><a href="#">Как забронировать и оплатить тур</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="sandwichButtonBlock">
+                    <img id="sandwich" src="../img/sandwich.png" alt="sandwich" onclick="checkSandwichValue()">
+                </div>
+            </section>
+            <section class="headerBottom">
+                <div class="bestOffers">
+                    <h2>Лучшие предложения по солнечному Египту из Харькова</h2>
+                    <button>Получить предложение</button>
+                </div>
+                <div id="slider">
+                    <button class="slide1"></button>
+                    <button class="slide2"></button>
+                    <button class="slide3"></button>
+                </div>
+            </section>
+        </article>
+    </header>
+    <main>
+        <article>
+            <section class="tourSelection">
+                <div class="typeTour">
+                    <a href="#">Горящие туры</a>
+                    <a href="#">Популярные туры</a>
+                </div>
+                <div class="tours">
+                    <div class="tour">
+                        <div class="tourImage">
+                            <img src="../img/offer_1.png" alt="">
+                        </div>
+                        <div class="tourDescription">
+                            <h3>8 марта в Cyrene Sharm hotel</h3>
+                            <p class="tourDate">(12.03.2018 — 19.03.2018)</p>
+                            <p class="description">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <p class="price">1259 грн</p>
+                            <span class="numberOfPerson">/за 1 человека</span>
+                            <span class="tourArrow">></span>
+                        </div>
+                    </div>
+                    <div class="tour">
+                        <div class="tourImage">
+                            <img src="../img/offer_2.png" alt="offer_1">
+                        </div>
+                        <div class="tourDescription">
+                            <h3>8 марта в Cyrene Sharm hotel</h3>
+                            <p class="tourDate">(12.03.2018 — 19.03.2018)</p>
+                            <p class="description">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <p class="price">1259 грн</p>
+                            <span class="numberOfPerson">/за 1 человека</span>
+                            <span class="tourArrow">></span>
+                        </div>
+                    </div>
+                    <div class="tour">
+                        <div class="tourImage">
+                            <img src="../img/offer_2.png" alt="offer_2">
+                        </div>
+                        <div class="tourDescription">
+                            <h3>8 марта в Cyrene Sharm hotel</h3>
+                            <p class="tourDate">(12.03.2018 — 19.03.2018)</p>
+                            <p class="description">Перелёт, питание по системе all inclusive, трансфер</p>
+                            <p class="price">1259 грн</p>
+                            <span class="numberOfPerson">/за 1 человека</span>
+                            <span class="tourArrow">></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="advantages">
+                <h2>НАШИ ПРЕИМУЩЕСТВА</h2>
+                <div class="blockAdvantage">
+                    <div class="blockAdvantageImg">
+                        <img src="../img/advantages_img.png" alt="advantages_img">
+                    </div>
+                    <p>Очень долго подбирали разные варианты для того, чтобы отпраздновать свой юбилейный День Рождения в путешествии и не могли определиться... Решили обратиться за помощью в турагенство. Гульнара, выслушав все пожелания, предложила отдых в Турции, отель Justiniano Club Park Conti 5* в Окурджалар возле Аланьи. Мы очень благодарны ей за предложенный вариант!!! Отдых получился отличный! Отель с большой ухоженной территорией, внимательный обслуживающий персонал. Отличный номер с видом на море. </p>
+                </div>
+            </section>
+            <section class="desiredTour">
+                <h2>ХОЧУ ПРЕДЛОЖЕНИЕ ПО ТУРУ</h2>
+                <form class="formDesiredTour" action="">
+                    <input type="text" name="" id="" placeholder="Имя" required>
+                    <input type="email" name="" id="" placeholder="Email" pattern = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+                    <input type="tel" name="" id="" placeholder="Телефон" pattern="[0-9_-]{10}" required>
+                    <ul aria-required="true">
+                        <li id="tourCountry" onclick="checkValueCountryDropDownMenu()">Страна тура
+                            <ul id="dropDownMenuCountries">
+                                <li>Турция</li>
+                                <li>Египет</li>
+                                <li>Шри-Ланка</li>
+                                <li>Доминикана</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <input type="submit" value="Получить предложение">
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <article>
+            <section>
+                <div class="footerLogo">
+                    <img src="../img/footer_logo.png" alt="footer_logo">
+                    <div class="companySlogan">
+                        <h2>КУРАЖ ТУР</h2>
+                        <p>Мир вокруг тебя</p>
+                        <p>стоит только захотеть</p>
+                    </div>
+                </div>
+                <div class="companyDescription">
+                    <p>Кураж - тур агенство, которое предоставляет услуги по поиску, оформлению и подбору туров для Вас и Ваших родных. </p>
+                </div>
+                <div class="siteCreator">
+                    <p>Создание сайта - <strong>Webakula</strong></p>
+                </div>
+            </section>
+            <section>
+                <h3>Навигация</h3>
+                <ul class="footerMenuNavigation">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Туры</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Услуги</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Поддержка</h3>
+                <ul class="supportMenu">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Обратная связь</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Контакты</h3>
+                <div class="footerContacts">
+                    <p>г. Харьков, ул. Мироносицкая 10а</p>
+                    <p>+38 (099) 990-81-00</p>
+                </div>
+                <div class="footerSocial">
+                    <a href="#"><img class="icon" src="../img/icon_facebook.png" alt="icon_facebook"></a>
+                    <a href="#"><img class="icon" src="../img/icon_instagram.png" alt="icon_instagram"></a>
+                </div>
+            </section>
+        </article>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

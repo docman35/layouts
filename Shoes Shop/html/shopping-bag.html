@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping Bag</title>
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/shopping-bag.css">
+</head>
+<body onload="basketItems();
+sumPrice(); getSizeBasket();">
+    <div id="wrapper">
+        <header id="headerContainer" role="header">
+            <nav id="mainMenu">
+                <a href="./home.html" id="logo">
+                    <h1>SH</h1>
+                </a>
+                <ul class="largeMenu">
+                    <li><a href="./category-all.html">Women</a></li>
+                    <li><a href="./category-all.html">Men</a></li>
+                    <li><a href="./category-all.html">Kids</a></li>
+                    <li><a href="./category-all.html">Coming Soon</a></li>
+                </ul>
+            </nav>
+            <div id="headerBasketSearch">
+                    <input type="search" name="" id="inputSearch" placeholder="Search something...">
+                    <button id="searchButton" onclick="onInputSearchClick()"></button>
+                    <a href="../html/shopping-bag.html" id="basketButton">
+                        <button id="basket">Basket <span id="counter"></span></button>
+                    </a>
+            </div>
+            <div id="smallDisplaySearch">
+                <input type="search" name="" id="inputSmallSearch" placeholder="Search something...">
+                <button id="searchButtonSmall" onclick="onInputSearchClick()"></button>
+            </div>
+            <ul class="mediumMenu">
+                    <li><a href="./category-all.html">Woman</a></li>
+                    <li><a href="./category-all.html">Men</a></li>
+                    <li><a href="./category-all.html">Kids</a></li>
+                    <li><a href="./category-all.html">Coming Soon</a></li>
+                </ul>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <h2>YOUR SHOPPING BAG</h2>
+                    <p>Items reserved for limited time only</p>
+                </section>
+                <section>
+                    <table id="basketContainer">
+                        <tr id="titleRow">
+                            <th>PRODUCT</th>
+                            <th>DESCRIPTION</th>
+                            <th>COLOR</th>
+                            <th>SIZE</th>
+                            <th>QTY</th>
+                            <th>AMOUNT</th>
+                            <th>DELETE</th>
+                        </tr>
+                    </table>
+                </section>
+                <section>
+                    <h4>Subtotal:</h4>
+                    <span id="sumPrice">€1000</span>
+                </section>
+                <section>
+                    <a href="../html/home.html">Continue Shopping</a>
+                    <button id="orderNow">ORDER NOW</button>
+                </section>
+            </article>
+        </main>
+        <footer id="footerContainer" role="footer">
+            <article>
+                <section>
+                    <h3>COLLECTION</h3>
+                    <ul>
+                        <li><a href="./category-all.html">Woman</a></li>
+                        <li><a href="./category-all.html">Men</a></li>
+                        <li><a href="./category-all.html">Kids</a></li>
+                        <li><a href="./category-all.html">Coming</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>SITE</h3>
+                    <ul>
+                        <li><a href="./category-all.html">Terms of Service</a></li>
+                        <li><a href="./category-all.html">Privacy Policy</a></li>
+                        <li><a href="./category-all.html">Copyright Policy</a></li>
+                        <li><a href="./category-all.html">Press Kit</a></li>
+                        <li><a href="./category-all.html">Support</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>SHOP</h3>
+                    <ul>
+                        <li><a href="./category-all.html">About us</a></li>
+                        <li><a href="./category-all.html">Shipping Methods</a></li>
+                        <li><a href="./category-all.html">Career</a></li>
+                        <li><a href="./category-all.html">Contact</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>SOCIAL</h3>
+                    <p>Shoper in made with love in Warsaw, 2014 All rights reserved. El Passion</p>
+                    <div class="socialNetworks">
+                        <a href=""><img src="../img/Twitter1440px(1).png" alt="Twitter"></a>
+                        <a href=""><img src="../img/Facebook1440px(1).png" alt="Facebook"></a>
+                        <a href=""><img src="../img/Instagram1440px(1).png" alt="Instagram"></a>
+                    </div>
+                </section>
+            </article>
+        </footer>
+    </div>
+    <div id="containerModalWindow">
+        <div id="modalWindow">
+            <h1>ORDER SENT!</h1>
+            <h2>Thank you, and happy shopping</h2>
+            <button id="closeModalWindow">+</button>
+        </div>
+    </div>
+    
+    <script src="../js/script.js"></script>
+    <script src="../js/shopping-bag.js"></script>
+</body>
+</html>

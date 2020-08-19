@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сведения о продукте</title>
+    <link rel="stylesheet" href="../css/header-footer.css"> 
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/products-details.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="headerContainer" role="header">
+            <nav id="mainMenu">
+                <a href="./home.html" id="logo">
+                    <h1>SH</h1>
+                </a>
+                <ul class="largeMenu">
+                    <li><a href="./category-all.html">Women</a></li>
+                    <li><a href="./category-all.html">Men</a></li>
+                    <li><a href="./category-all.html">Kids</a></li>
+                    <li><a href="./category-all.html">Coming Soon</a></li>
+                </ul>
+            </nav>
+            <div id="headerBasketSearch">
+                    <input type="search" name="" id="inputSearch" placeholder="Search something...">
+                    <button id="searchButton" onclick="onInputSearchClick()"></button>
+                    <a href="../html/shopping-bag.html" id="basketButton">
+                        <button id="basket">Basket <span id="counter"></span></button>
+                    </a>
+            </div>
+            <div id="smallDisplaySearch">
+                <input type="search" name="" id="inputSmallSearch" placeholder="Search something...">
+                <button id="searchButtonSmall" onclick="onInputSearchClick()"></button>
+            </div>
+            <ul class="mediumMenu">
+                    <li><a href="./category-all.html">Woman</a></li>
+                    <li><a href="./category-all.html">Men</a></li>
+                    <li><a href="./category-all.html">Kids</a></li>
+                    <li><a href="./category-all.html">Coming Soon</a></li>
+                </ul>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <img src="../img/shoes_slide1.png" id="mainShoesSLide"></img>
+                    <img src="../img/shoes_slide1.png" class="shoesSlide"></img>
+                    <img src="../img/shoes_slide4.png" class="shoesSlide"></img>
+                    <img src="../img/shoes_slide3.png" class="shoesSlide"></img>
+                </section>
+                <section>
+                    <h2 class="titleItem">FLORAL PLIMSOLL</h2>
+                    <p class="numberItem">Article number: 14210160762</p>
+                    <span class="priceItem">€99,95</span>
+                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit felis, malesuada ultricies.</p>
+                </section>
+                <section>
+                    <h3>SIZE</h3>
+                    <div id="sizeContainer">
+                        <button class="sizeItem">38</button>
+                        <button class="sizeItem">39</button>
+                        <button class="sizeItem">40</button>
+                        <button class="sizeItem">41</button>
+                        <button class="sizeItem">42</button>
+                    </div>
+                </section>
+                <section>
+                    <button id="addToCart" onclick="basket(), getSizeBasket(), addedProduct();">ADD TO CART</button>
+                </section>
+            </article>
+        </main>
+        <footer id="footerContainer" role="footer">
+            <figure id="slider">
+                <button id="prevSlide" onclick="prevSlide()"></button>
+                <ul id="slidesContainer">
+                    <li><img src="../img/Carousel1_1440px.png" alt=""></li>
+                    <li><img src="../img/Carousel2_1440px.png" alt=""></li>
+                    <li><img src="../img/Carousel3_1440px.png" alt=""></li>
+                    <li><img src="../img/Carousel4_1440px.png" alt=""></li>
+                    <li><img src="../img/Carousel5_1440px.png" alt=""></li>
+                    <li><img src="../img/Carousel6_1440px.png" alt=""></li>
+                    <li><img src="../img/Carousel7_1440px.png" alt=""></li>
+                    <li><img src="../img/Carousel8_1440px.png" alt=""></li>
+                </ul>
+                <button id="nextSlide" onclick="nextSlide()"></button>
+                </figure>
+                <article>
+                    <section>
+                        <h3>COLLECTION</h3>
+                        <ul>
+                            <li><a href="#">Woman</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Kids</a></li>
+                            <li><a href="#">Coming</a></li>
+                            </ul>
+                    </section>
+                    <section>
+                        <h3>SITE</h3>
+                        <ul>
+                            <li><a href="./category-all.html">Terms of Service</a></li>
+                            <li><a href="./category-all.html">Privacy Policy</a></li>
+                            <li><a href="./category-all.html">Copyright Policy</a></li>
+                            <li><a href="./category-all.html">Press Kit</a></li>
+                            <li><a href="./category-all.html">Support</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>SHOP</h3>
+                        <ul>
+                            <li><a href="./category-all.html">About us</a></li>
+                            <li><a href="./category-all.html">Shipping Methods</a></li>
+                            <li><a href="./category-all.html">Career</a></li>
+                            <li><a href="./category-all.html">Contact</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>SOCIAL</h3>
+                        <p>Shoper in made with love in Warsaw, 2014 © All rights reserved. El Passion</p>
+                        <div class="socialNetworks">
+                            <a href=""><img src="../img/Twitter1440px(1).png" alt="Twitter"></a>
+                            <a href=""><img src="../img/Facebook1440px(1).png" alt="Facebook"></a>
+                            <a href=""><img src="../img/Instagram1440px(1).png" alt="Instagram"></a>
+                        </div>
+                    </section>
+                </article>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
