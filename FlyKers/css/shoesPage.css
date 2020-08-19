@@ -1,0 +1,117 @@
+#blockPhotosAndSizesShoes {
+    display: flex;
+}
+
+#sliderShoes {
+    width: 1000px;
+    height: 700px;
+    border: 1px solid red;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    /* -moz-user-select: none;
+    -khtml-user-select: none; */
+}
+
+#sliderShoes .slideShoes {
+    width: 600px;
+    height: 600px;
+    /* margin-right: 5px; */
+    /* position: absolute; */
+}
+
+#sliderBlockImages {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    transition: .5s;
+}
+
+#sliderArrowLeft,
+#sliderArrowRight {
+    position: absolute;
+    top: 285px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    background-color: black;
+    opacity: .8;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    z-index: 2;
+}
+
+#sliderArrowLeft:hover,
+#sliderArrowRight:hover {
+    background-color: black;
+    opacity: 1;
+}
+
+#sliderArrowLeft {
+    left: 0;
+}
+
+#sliderArrowRight {
+    right: 0;
+}
+
+#lineSelectedSize {
+    width: 300px;
+    height: 50px;
+    padding-left: 20px;
+    border: 1px solid gray;
+}
+
+#tableSizesShoes {
+    display: none;
+    border: 1px solid gray;
+    border-top: none;
+}
+
+#sizeCountries {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#sizeCountries h4 {
+    width: 75px;
+}
+
+#sizesShoes {
+    width: 300px;
+    height: 230px;
+    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;    
+    overflow-y: scroll;
+}
+
+#sizesShoes section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sizesShoes section:hover {
+    background-color: gray;
+}
+
+#sizesShoes section h4 {
+    margin: 0;
+}
+
+#sizesShoes section h4,
+#sizesShoes section span {
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

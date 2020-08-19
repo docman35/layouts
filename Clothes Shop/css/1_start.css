@@ -1,0 +1,372 @@
+main>article {
+    display: flex;
+    flex-direction: column;
+}
+
+main article .blockNikeAndHats,
+main article .blockBestOffer,
+main article .blockNewArrival {
+    border-top: 1px solid lightgray;
+}
+
+main article .blockNikeAndHats {
+    display: flex;
+    justify-content: space-between;
+}
+
+main article .blockNikeAndHats a {
+    width: 50%;
+}
+
+main article .blockNikeAndHats a img{
+    width: 100%;
+    height: 100%;
+}
+
+main article .blockNikeAndHats a img:nth-last-of-type(2){
+    border-left: 1px solid lightgray;
+}
+
+main article .blockBestOffer {
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 70px;
+}
+
+.blockBestOffer .topicBestOffer p {
+    font-style: italic;
+    color: rgb(87,87,87);
+    margin-bottom: 50px;
+}
+
+main article .blockBestOffer article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bestOfferBlockItems {
+    width: 18%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bestOfferBlockItems a {
+    width: 100%;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bestOfferArrowUp,
+.bestOfferArrowDown {
+    width: 50px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 48px;
+    color: rgb(241,74,88);
+}
+
+.bestOfferArrowDown {
+    transform: rotate(180deg);
+}
+
+.bestOfferBlockItems img {
+    width: 100%;
+    height: 350px;
+}
+
+.bestOfferBlockItems h4 {
+    margin: 1px 0;
+    font-size: 14px;
+}
+
+.symbolPlus,
+.symbolEqual {
+    position: relative;
+    bottom: 42px;
+}
+
+.symbolPlus,
+.symbolEqual,
+.bestOfferSum {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.bestOfferSum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bestOfferSum p {
+    margin: 0;
+}
+
+.bestOfferSum .oldPrice {
+    text-align: left;
+    position: relative;
+    right: 60px;
+    top: 30px;
+    color: gray;
+}
+
+.bestOfferSum .oldPrice::after {
+    content: "";
+    height: 90px;
+    position: absolute;
+    left: 45px;
+    top: -30px;
+    border-right: 1px solid red;
+    transform: rotate(60deg);
+}
+
+.bestOfferSum .newPrice {
+    position: relative;
+    top: 40px;
+}
+
+.bestOfferSum .inputAddToBag {
+    margin-top: 100px;
+}
+
+.blockNewInputAddToBag {
+    display: none;
+}
+
+.bestOfferSum .inputAddToBag,
+.blockInputAllArrivals .inputAllArrivals,
+.blockNewInputAddToBag .inputAddToBag {
+    width: 300px;
+    height: 70px;
+    background-color: white;
+    border: 1px solid lightgray;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.bestOfferSum .inputAddToBag:hover,
+.blockInputAllArrivals .inputAllArrivals:hover {
+    color: rgb(241,74,88);
+    border: 1px solid rgb(241,74,88);
+    transition: .5s;
+}
+
+main article .blockNewArrival {
+    min-height: 700px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 40px;
+}
+
+.viewItem img {
+    width: 225px;
+    height: 320px;
+    cursor: pointer;
+}
+
+.viewItem .blockViewItem {
+    width: 225px;
+    height: 320px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 27px;
+    right: 0;
+    background-color: rgba(0,0,0, .6);
+    color: rgb(241,74,88);
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.blockBestOffer h2,
+.blockNewArrival h2 {
+    font-size: 48px;
+    margin-top: 0;
+}
+
+.blockBestOffer h2 {
+    margin-bottom: 0;
+}
+
+.blockNewArrival h2 {
+    margin-bottom: 70px;
+}
+
+main article .blockNewArrivalItems {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.blockNewArrivalItems .newArrivalProct {
+    width: 280px;
+}
+
+.blockInputAllArrivals {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    main article .blockBestOffer,
+    main article .blockNewArrival {
+        padding: 50px 35px;
+    }
+
+    .blockNewArrivalItems .newArrivalProct a:hover .blockViewItem {
+        display: none;
+    }
+
+    .newArrivalProct img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .blockBestOffer .topicBestOffer p {
+        line-height: 30px;
+    }
+
+    .bestOfferBlockItems {
+        width: 30%;
+    }
+
+    .bestOfferSum .inputAddToBag {
+        display: none;
+    }
+
+    .bestOfferSum .oldPrice {
+        top: -50px;
+        right: 40px;
+        font-size: 20px;
+    }
+
+    .bestOfferSum .newPrice {
+        top: -50px;
+    }
+
+    .bestOfferSum .oldPrice::after {
+        height: 50px;
+        left: 28px;
+        top: -17px;
+    }
+
+    .blockNewInputAddToBag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0 50px 0;
+    }
+
+    .blockNewArrivalItems .newArrivalProct {
+        width: 30%;
+    }
+
+    .blockNewArrivalItems .newArrivalProct:last-of-type {
+        display: none;
+    }
+}
+
+@media (max-width: 376px) {
+    main article .blockBestOffer,
+    main article .blockNewArrival {
+        padding: 50px 20px;
+    }
+
+    main article .blockNewArrival{
+        min-height: 650px;
+    }
+
+    .blockNikeAndHats a:nth-of-type(1) {
+        width: 100%;
+    }
+
+    .blockNikeAndHats a:nth-of-type(2) {
+        display: none;
+    }
+
+    .bestOfferBlockItems {
+        width: 47%;
+        height: 400px;
+    }
+
+    .bestOfferSum {
+        width: 100%;
+        display: block;
+        position: relative;
+        bottom: 20px;
+    }
+
+    .symbolEqual {
+        top: 35px;
+        left: 95px;
+        bottom: 0;
+    }
+
+    .bestOfferSum .oldPrice,
+    .bestOfferSum .newPrice {
+        text-align: center;
+        position: static;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .bestOfferSum .oldPrice {
+        font-size: 20px;
+    }
+
+    .bestOfferSum .oldPrice::after {
+        height: 60px;
+        left: 165px;
+    }
+
+    .blockNewInputAddToBag .inputAddToBag,
+    .blockInputAllArrivals .inputAllArrivals {
+        width: 250px;
+    }
+
+    .blockNewArrival h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .bestOfferBlockItems img,
+    .newArrivalProct img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .blockNewArrivalItems .newArrivalProct {
+        width: 48%;
+    }
+
+    .blockNewArrivalItems .newArrivalProct:nth-of-type(3) {
+        display: none;
+    }
+}

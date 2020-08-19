@@ -1,0 +1,108 @@
+.main{
+    padding: 7vw 17.5vw 7vw 17vw;
+}
+
+.main h2{
+    font-size: 3vw;
+}
+
+.main section{
+    width: 100%;
+    margin-bottom: 4vw;
+}
+
+.main section:nth-of-type(3){
+    margin-bottom: 0;
+    padding-bottom: 1vw;
+}
+
+.main section img{
+    width: 62.9vw;
+    height: 35vw;
+}
+
+.main section h3{
+    font-size: 2vw;
+}
+
+.main section a,
+.main section button a{
+    text-decoration: none;
+}
+
+.main section a{
+    color: black;
+}
+
+.main section a:hover{
+    color: gray;
+    transition: 1.5s;
+}
+
+.main section p{
+    line-height: 1.5vw;
+    color: gray;
+}
+
+.main section p:hover{
+    color: black;
+    transition: 1.5s;
+}
+
+.main section .readMore input[type="submit"]{
+    width: 8vw;
+    height: 3vw;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: .5vw 1vw;
+    background-color: black;
+    border: .1vw solid black;
+    margin-top: 1vw;
+    cursor: pointer;
+}
+
+.main section .readMore input[type="submit"]:hover{
+    background-color: white;
+    transition: .5s;
+}
+
+.main section .readMore input{
+    font-size: 1vw;
+    color: white;
+}
+
+.main section .readMore:hover input{
+    color: black;
+}
+
+.main section .readMore:nth-of-type(3) input{
+    display: inline-block;
+    margin-bottom: 2vw;
+}
+
+
+footer{
+    top: 0vw;
+}
+
+@media screen and (max-width: 1024px){
+    .main{
+        width: 100%;
+        min-height: 40vw;
+        margin-top: 6vw;
+        padding: .01vw 0 0 .8vw; 
+    }
+
+    .main section p{
+        line-height: 2vw;
+    }
+
+    .main section button{
+        padding: 0 1vw .5vw 1vw;
+    }
+
+    footer{
+        display: none;
+    }
+}

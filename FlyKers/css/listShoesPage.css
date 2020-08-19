@@ -1,0 +1,289 @@
+main {
+    padding: 0 20px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* position: relative; */
+    /* z-index: 3; */
+}
+
+#asideMenu {
+    width: 245px;
+    min-height: 250px;
+    /* border: 1px solid red; */
+    padding-top: 80px;
+    flex: 0 0 240px;
+}
+
+#asideMenu .descriptionBlock {
+    /* position: absolute; */
+    width: 240px;
+}
+
+#asideMenu .descriptionBlock:nth-of-type(2) {
+    top: 300px;
+}
+#asideMenu .descriptionBlock:nth-of-type(3) {
+    top: 365px;
+}
+#asideMenu .descriptionBlock:nth-of-type(4) {
+    top: 430px;
+}
+#asideMenu .descriptionBlock:nth-of-type(5) {
+    top: 495px;
+}
+#asideMenu .descriptionBlock:nth-of-type(6) {
+    top: 560px;
+}
+
+#asideMenu .asideCaptionBlock {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 50px 0 0 0; */
+    cursor: pointer;
+    border-top: 1px solid lightgray;
+}
+
+.asideItemCaption {
+    color: rgb(73, 73, 73);
+    font-size: 16px;
+}
+
+#asideMenu .asideContentBlock{
+    display: none;
+}
+
+#asideMenu .descriptionBlock:last-child .asideContentBlock {
+    display: flex;
+}
+
+#asideMenu .descriptionBlock:last-child .asideContentBlock label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+}
+
+#asideMenu .descriptionBlock:last-child .asideContentBlock label:hover{
+    font-size: 17px;
+    color: orange;
+    transition: .5s;
+}
+
+#asideMenu .descriptionBlock:last-child .asideContentBlock label .saleAmount {
+    display: block;
+    width: 50px;
+    text-align: center;
+    /* border: 1px solid red; */
+    color: gray;
+    font-size: 14px;
+    /* margin-left: 5px; */
+}
+
+#asideMenu .descriptionBlock:last-child .asideContentBlock label:not(:nth-of-type(1)) .saleAmount {
+    margin-left: 3px;
+}
+
+#asideMenu .descriptionBlock:last-child .asideContentBlock label::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    border: 1px solid black;
+}
+
+.asideSizeItems,
+.asideContentBlock{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    
+}
+
+#asideSizeItemsBlock .asideContentBlock,
+#producerItems .asideContentBlock,
+#colorItems .asideContentBlock {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.asideSizeItems h3 {
+    width: 100%;
+}
+
+.asideSizeItems input,
+#producerItems input, 
+#colorItems input, 
+#gender input, 
+#sales input {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.asideSizeItems label,
+#producerItems label,
+#colorItems label,
+#gender label,
+#sales label {
+    width: 150px;
+    cursor: pointer;
+}
+
+#priceItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#priceItemsFrom,
+#priceItemsTo {
+    width: 95px;
+    padding: 10px;
+}
+
+#priceItemsRange {
+    width: 240px;
+    margin: 0;
+}
+
+#mainBlockItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+    /* position: relative; */
+}
+
+#mainBlockItems .typesShoes {
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex: auto;
+    margin-top: 80px;
+}
+
+#mainBlockItems .blockCounterItems {
+    width: 100%;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+#mainBlockItems .typesShoes .typeShoesButton {
+    width: 370px;
+    height: 50px;
+    border: none;
+    background-color: rgb(255, 115, 0);
+    background-color: black;
+    color: rgb(68, 68, 68);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 50px;
+    font-size: 14px;
+    /* margin-bottom: 20px; */
+}
+
+#mainBlockItems .typesShoes .typeShoesButton:nth-of-type(1) {
+    left: 280px;
+}
+#mainBlockItems .typesShoes .typeShoesButton:nth-of-type(2) {
+    left: 670px;
+}
+#mainBlockItems .typesShoes .typeShoesButton:nth-of-type(3) {
+    left: 1065px;
+}
+#mainBlockItems .typesShoes .typeShoesButton:nth-of-type(4) {
+    left: 280px;
+    top: 295px;
+}
+#mainBlockItems .typesShoes .typeShoesButton:nth-of-type(5) {
+    left: 670px;
+    top: 295px;
+}
+#mainBlockItems .typesShoes .typeShoesButton:nth-of-type(6) {
+    left: 1065px;
+    top: 295px;
+}
+#mainBlockItems .typesShoes .typeShoesButton:nth-of-type(7) {
+    left: 280px;
+    top: 370px;
+}
+#mainBlockItems .typesShoes .typeShoesButton:nth-of-type(8) {
+    left: 670px;
+    top: 370px;
+}
+#mainBlockItems .typesShoes .typeShoesButton:nth-of-type(9) {
+    left: 1065px;
+    top: 370px;
+}
+
+#mainBlockItems .typesShoes .typeShoesButton:hover {
+    /* background-color: rgb(0, 0, 0); */
+    /* background-color: rgb(255, 255, 255); */
+    background-color: orange;
+    transform: scale(1.08,1.08);
+}
+
+#mainBlockItems .productBlock {
+    min-height: 450px;
+    /* border: 1px solid red; */
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; */
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#mainBlockItems .productImageBlock {
+    display: block;
+    width: 370px;
+    height: 370px;
+    overflow: hidden;
+}
+
+#mainBlockItems .productImageBlock img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+#mainBlockItems .productInfo .productTitle,
+#mainBlockItems .productInfo .productPrice {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+}
+
+#mainBlockItems .productInfo .productTitle {
+    font-weight: normal;
+}
+
+#mainBlockItems .productInfo .productPrice {
+    font-weight: bold;
+}
+
+#mainBlockItems .productInfo .productSizeBlock {
+    /* height: 50px; */
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mainBlockItems .productInfo .productSizeBlock a {
+    color: gray;
+    font-size: 14px;
+}
+
+#mainBlockItems .productInfo .productSizeBlock a:hover {
+    color: black;
+    transition: .5s;
+}
