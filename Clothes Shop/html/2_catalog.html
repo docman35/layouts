@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalog</title>
+    <link rel="stylesheet" href="../css/2_catalog.css">
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+</head>
+<body>
+    <header>
+        <div id="headerTopItems">
+            <h1 class="mobileLogo">
+                <a href="../html/1_start.html">TL</a>
+            </h1>
+            <h1 class="logo"><a href="../html/1_start.html">Template</a></h1>
+            <div class="inputEmailAndBag">
+                <a href="" class="signUp">E-mail sign up</a>
+                <a href="../html/4_shopping_bag.html"><button id="buttonBag">Bag <span id="counterBag">(0)</span></button></a>
+            </div>
+            <div class="blockSandwich">
+                <img src="../img/sandwich.png" alt="sandwich" id="sandwich" onclick="checkSandwichValue()">
+            </div>
+        </div>
+        <div id="headerBottomItems">
+            <nav id="mainMenu">
+                <ul>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Handbags</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">New Arrivals</a></li>
+                    <li><a href="#">Clearance</a></li>
+                    <li><a href="#">Store Locator</a></li>
+                </ul>
+            </nav>
+            <div id="searchInputBlock">
+                <input type="text" name="search" id="inputSearch" placeholder="Style Name">
+                <button id="searchButton" onclick="checkInputSearchValue()"></button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <article>
+            <section>
+                <ul id="blockSortingMenu">
+                    <li>
+                        <h3 class="titleButtonSorting">Fashion</h3>
+                    </li>
+                    <li>
+                        <h3 class="titleButtonSorting">Product type</h3>
+                    </li>
+                    <li class="colo">
+                        <h3 class="titleButtonSorting">Color</h3>
+                        <ul class="dropDownMenu">
+                            <li>
+                                <h4>Not selected</h4>
+                            </li>
+                            <li>
+                                <h4>Black</h4>
+                            </li>
+                            <li>
+                                <h4>Blue</h4>
+                            </li>
+                            <li>
+                                <h4>Red</h4>
+                            </li>
+                            <li>
+                                <h4>Green</h4>
+                            </li>
+                            <li>
+                                <h4>Golden</h4>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="titleButtonSorting">Brand</h3>
+                    </li>
+                    <li>
+                        <h3 class="titleButtonSorting">Size</h3>
+                    </li>
+                    <li>
+                        <h3 class="titleButtonSorting">Price range</h3>
+                    </li>
+                </ul>
+
+                <div class="tabletSortMenu">
+                    <div id="headlines" onclick="checkTabletSortMenuValue()">
+                        <h3>Fashion</h3>
+                        <h3>Product type</h3>
+                        <h3>Color</h3>
+                        <h3>Brand</h3>
+                        <h3>Size</h3>
+                        <h3>Price range</h3>
+                        <span id="tabletSortMenuArrow">^</span>
+                    </div>
+                    <div id="sortMenu">
+                        <ul>
+                            <li><h3>Fashion</h3></li>
+                            <li>Not selected</li>
+                            <li>Nail the 90s</li>
+                            <li>Casual style</li>
+                            <li>New Look</li>
+                            <li>Sport</li>
+                            <li>Vintage</li>
+                            <li>Classical style</li>
+                        </ul>
+                        <ul>
+                            <li><h3>Product type</h3></li>
+                            <li>Not selected</li>
+                            <li>Coats & jackets</li>
+                            <li>Dresses</li>
+                            <li>Jersey Tops</li>
+                        </ul>
+                        <ul>
+                            <li><h3>Color</h3></li>
+                            <li>Not selected</li>
+                            <li>Black</li>
+                            <li>Blue</li>
+                            <li>Red</li>
+                            <li>Green</li>
+                            <li>Golden</li>
+                        </ul>
+                        <ul>
+                            <li><h3>Brand</h3></li>
+                            <li>Not selected</li>
+                            <li>Chi Chi London</li>
+                            <li>Antipodium</li>
+                            <li>Adidas</li>
+                            <li>New Balance</li>
+                            <li>River Island</li>
+                        </ul>
+                        <ul>
+                            <li><h3>Size</h3></li>
+                            <li>Not selected</li>
+                            <li>UK 2</li>
+                            <li>UK 18</li>
+                            <li>UK 18L</li>
+                            <li>UK 20</li>
+                            <li>UK 20L</li>
+                            <li>UK 20S</li>
+                            <li>UK 22S</li>
+                            <li>UK 22</li>
+                        </ul>
+                        <ul>
+                            <li><h3>Price range</h3></li>
+                            <li>Not selected</li>
+                            <li>To £99</li>
+                            <li>£100-£299</li>
+                            <li>From £300</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <article class="blockSortedGoods">
+                    <section class="sortedGoods viewItem">
+                        <a href="../html/3_item.html">
+                            <img src="../img/product_1.png" alt="product_1">
+                            <h4 class="productName">Only Skinny Jeans</h4>
+                            <span>£65.50</span>
+                            <span class="blockViewItem">View Item</span>
+                        </a>
+                    </section>
+                    <section class="sortedGoods viewItem">
+                        <a href="../html/3_item.html">
+                            <img src="../img/product_2.png" alt="product_2">
+                            <h4 class="productName">Neck Knitted Jumper</h4>
+                            <span>£76.25</span>
+                            <span class="blockViewItem">View Item</span>
+                        </a>
+                    </section>
+                    <section class="sortedGoods viewItem">
+                        <a href="../html/3_item.html">
+                            <img src="../img/product_3.png" alt="product_3">
+                            <h4 class="productName">Turtle Neck Jumper in Rib</h4>
+                            <span>£130.25</span>
+                            <span class="blockViewItem">View Item</span>
+                        </a>
+                    </section>
+                    <section class="sortedGoods viewItem">
+                        <a href="../html/3_item.html">
+                            <img src="../img/product_4.png" alt="product_4">
+                            <h4 class="productName">With Patchwork Crochet</h4>
+                            <span>£80.60</span>
+                            <span class="blockViewItem">View Item</span>
+                        </a>
+                    </section>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <section class="templateSale">
+                        <h2>Last weekend <span>extra 50%</span> off on all reduced boots and shoulder bags</h2>
+                        <p>This offer is valid in-store and online. Prices displayed reflect this additional discount. This offer ends at 11:59 GMT on March 1st 2019</p>
+                    </section>
+                    <section>
+                        <article class="blockSaleGoods">
+                            <section class="saleGoods viewItem tabletSaleProduct">
+                                <a href="../html/3_item.html">
+                                    <img src="../img/product_4.png" alt="product_4">
+                                    <h4 class="productName">With Patchwork Crochet</h4>
+                                    <span>£80.60</span>
+                                    <span class="blockViewItem">View Item</span>
+                                </a>
+                            </section>
+                            <section class="saleGoods viewItem">
+                                <a href="../html/3_item.html">
+                                    <img src="../img/product_5.png" alt="product_5">
+                                    <h4 class="productName">Levi's Jeans for women</h4>
+                                    <span>£95.50</span> 
+                                    <span class="blockViewItem">View Item</span>   
+                                </a>
+                            </section>
+                            <section class="saleGoods viewItem">
+                                <a href="../html/3_item.html">
+                                    <img src="../img/product_6.png" alt="product_6">
+                                    <h4 class="productName">Boyfriend T-Shirt with Bohemian Print</h4>
+                                    <span>£90.00</span>
+                                    <span class="blockViewItem">View Item</span>
+                                </a>
+                            </section>
+                            <section class="saleGoods viewItem">
+                                <a href="../html/3_item.html">
+                                    <img src="../img/product_7.png" alt="product_7">
+                                    <h4 class="productName">Colour Block</h4>
+                                    <span>£550.50</span>
+                                    <span class="blockViewItem">View Item</span>
+                                </a>
+                            </section>
+                            <section class="saleGoods viewItem">
+                                <a href="../html/3_item.html">
+                                    <img src="../img/product_8.png" alt="product_8">
+                                    <h4 class="productName">Monki Festival Knitted</h4>
+                                    <span>£24.75</span>
+                                    <span class="blockViewItem">View Item</span>
+                                </a>
+                            </section>
+                            <section class="saleGoods viewItem">
+                                <a href="../html/3_item.html">
+                                    <img src="../img/product_9.png" alt="product_9">
+                                    <h4 class="productName">Oversized Cardigan</h4>
+                                    <span>£90.00</span>
+                                    <span class="blockViewItem">View Item</span>
+                                </a>
+                            </section>
+                            <section class="saleGoods viewItem">
+                                <a href="../html/3_item.html">
+                                    <img src="../img/product_10.png" alt="product_10">
+                                    <h4 class="productName">Paul & Joe Sister Jumper with Neon Trims</h4>
+                                    <span>£19.75</span>
+                                    <span class="blockViewItem">View Item</span>
+                                </a>
+                            </section>
+                            <section class="saleGoods viewItem">
+                                <a href="../html/3_item.html">
+                                    <img src="../img/product_11.png" alt="product_11">
+                                    <h4 class="productName">Only Boosted Knee Jean</h4>
+                                    <span>£140.50</span>
+                                    <span class="blockViewItem">View Item</span>
+                                </a>
+                            </section>
+                            <section class="saleGoods viewItem">
+                                <a href="../html/3_item.html">
+                                    <img src="../img/product_12.png" alt="product_12">
+                                    <h4 class="productName">Boyfriend T-Shirt with Paris Print</h4>
+                                    <span>£85.75</span>
+                                    <span class="blockViewItem">View Item</span>
+                                </a>
+                            </section>
+                        </article>
+                    </section>
+                    <section class="blockInputShowMore">
+                        <input type="submit" value="Show more" class="inputShowMore">
+                    </section>
+                </article>
+            </section>
+            <section class="recommendGoods">
+                <img src="../img/recommendGoods_1.png" alt="recommendGoods_1">
+                <img src="../img/recommendGoods_2.png" alt="recommendGoods_2">
+                <img src="../img/recommendGoods_3.png" alt="recommendGoods_3">
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="blockFooterTop">
+            <article class="blockFooterMenu">
+                <section class="blockFooterMenuList">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Store</a></li>
+                        <li><a href="#">Gift cards</a></li>
+                        <li><a href="#">Size guide</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </section>
+                <section class="blockFooterMenuList">
+                    <h3>Customer Care</h3>
+                    <ul>
+                        <li><a href="#">Customer service</a></li>
+                        <li><a href="#">Track my order</a></li>
+                        <li><a href="#">Return policy</a></li>
+                        <li><a href="#">Shipping & delivery</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </section>
+            </article>
+            <article class="blockFooterContacts">
+                <section class="blockFooterOrderAndQuestions">
+                    <div class="blockFooterQuestions">
+                        <h3>Questions</h3>
+                        <p>
+                            <img src="../img/twitter_gray.png" alt="twitter">
+                            Tweet us <strong>@template</strong>
+                        </p>
+                    </div>
+                    <div class="blockFooterOrder">
+                        <h3>Order by phone</h3>
+                        <p>8-800-409-47-12</p>
+                    </div>
+                </section>
+                <section class="blockFooterDelivery">
+                    <p>We have our own delivery service which operates in 23 major European cities. Delivery time - 3-5 days.</p>
+                </section>
+                <section class="blockFooterSocial">
+                    <a href="#"><img src="../img/facebook.png" alt="facebook"></a>
+                    <a href="#"><img src="../img/twitter.png" alt="twitter"></a>
+                </section>
+                <section class="blockHelpUserMenuAndSocial">
+                    <div class="blockFooterBottomHelpUserMenu">
+                        <ul class="footerBottomHelpUserMenu">
+                            <li><a href="#">Legal notice</a></li>
+                            <li><a href="#">Privacy policy</a></li>
+                            <li><a href="#">Site map</a></li>
+                        </ul>
+                    </div>
+                    <div class="blockFooterSocial">
+                        <a href="#"><img src="../img/facebook.png" alt="facebook"></a>
+                        <a href="#"><img src="../img/twitter.png" alt="twitter"></a>
+                    </div>
+                </section>
+            </article>
+        </div>
+        <div class="blockFooterBottom">
+            <article >
+                <section>
+                    <p>@2010-2015, The Template Group Inc.</p>
+                </section>
+                <section class="shareAmount">
+                    <p>Share <span>1 437</span></p>
+                </section>
+                <section class="blockFooterBottomHelpUserMenu">
+                    <ul class="footerBottomHelpUserMenu">
+                        <li><a href="#">Legal notice</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Site map</a></li>
+                    </ul>
+                </section>
+            </article>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script src="../js/2_catalog.js"></script>
+</body>
+</html>
